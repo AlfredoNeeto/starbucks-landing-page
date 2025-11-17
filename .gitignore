@@ -1,0 +1,19 @@
+# Arquivos de configuração com dados sensíveis
+src/js/config.js
+
+# Node modules (se usar)
+node_modules/
+
+# Variáveis de ambiente
+.env
+.env.local
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

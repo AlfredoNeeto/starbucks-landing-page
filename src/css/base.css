@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-neutral-0);
+    color: var(--color-neutral-8);
+    line-height: 1.6;
+}
+
+#container {
+    background-image: url('../images/backgrounds/background-mobile.png');
+    background-size: contain;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--color-neutral-8);
+    font-weight: 700;
+    position: relative;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: var(--color-primary-1);
+        position: absolute;
+        bottom: 0px;
+        border-radius: 30px;
+    }
+}

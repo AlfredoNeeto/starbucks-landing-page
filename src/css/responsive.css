@@ -1,0 +1,231 @@
+@media (max-width: 480px) {
+    header {
+        padding: 10px 3%;
+
+        .navbar {
+            .logo {
+                width: 140px;
+            }
+        }
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    #home {
+        padding: 24px 3%;
+        gap: 10px;
+
+        .home-image {
+            width: clamp(220px, 85vw, 280px);
+        }
+
+        .home-title {
+            font-size: clamp(2rem, 8vw, 2.5rem);
+        }
+
+        .home-description {
+            font-size: 0.9rem;
+            padding: 0 10px;
+        }
+    }
+
+    #trending {
+        padding: 24px 3%;
+        gap: 24px;
+
+        .trending-cards {
+            .trending-card {
+                img {
+                    width: clamp(240px, 90vw, 280px);
+                }
+
+                .trending-rate {
+                    bottom: 50px;
+                    right: 20px;
+                    padding: 4px 8px;
+                    font-size: 0.85rem;
+                }
+
+                .trending-card-description {
+                    font-size: 1.1rem;
+
+                    span {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #news {
+        padding: 32px 3%;
+        gap: 3rem;
+
+        .news-cards {
+            gap: 3rem;
+
+            .news-card {
+                padding: 12px;
+                border-radius: 35px;
+
+                img {
+                    width: clamp(200px, 85vw, 250px);
+                    top: -50px;
+                }
+
+                .news-content {
+                    margin-top: -50px;
+
+                    h3 {
+                        font-size: 1.3rem;
+
+                        span {
+                            font-size: 0.95rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #about {
+        padding: 24px 3%;
+        border-radius: 24px;
+
+        .about-content {
+            gap: 20px;
+
+            .about-image {
+                width: clamp(220px, 85vw, 280px);
+            }
+
+            .about-info {
+                padding: 18px;
+                border-radius: 16px;
+
+                h3 {
+                    font-size: 1.4rem;
+                }
+
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    header {
+        .navbar {
+            .btn-mobile {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                position: static;
+                gap: 1rem;
+                width: auto;
+                padding: 0;
+                box-shadow: none;
+
+                li a:hover::after {
+                    bottom: -8px;
+                }
+            }
+
+            .btn-default {
+                display: block;
+            }
+        }
+    }
+
+    #home {
+        justify-content: center;
+    }
+
+    #about {
+        .about-content {
+            .about-info {
+                h3 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    #trending {
+        .trending-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 24px;
+
+        }
+    }
+
+    #news {
+        min-height: 100vh;
+        gap: 6rem;
+
+        .news-cards {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 36px;
+
+            .news-card {
+                img {
+                    width: 250px;
+                    margin-top: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    #container {
+        background-image: url('../images/backgrounds/background-desktop.png');
+        background-size: cover;
+        background-position: start;
+        background-repeat: no-repeat;
+    }
+
+    #about {
+        margin: 4%;
+        justify-content: center;
+
+        .about-content {
+            flex-direction: row;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .about-image {
+            order: 1;
+        }
+
+        .about-info:first-child {
+            order: 2;
+        }
+
+        .about-info:last-child {
+            order: 3;
+        }
+    }
+
+    #home {
+        .home-image {
+            width: clamp(340px, 54%, 440px);
+        }
+    }
+}
