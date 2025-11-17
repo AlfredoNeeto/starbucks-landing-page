@@ -76,6 +76,10 @@ Sim! Funciona perfeitamente em:
 - Tablet
 - Mobile
 
+## 🔗 Acesse o site
+
+Publicado em: https://cafely.netlify.app/
+
 ## 🤝 Precisa de ajuda?
 
 Verifique a chave API em `src/js/config.js` ou acesse https://console.groq.com
